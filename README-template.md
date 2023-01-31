@@ -13,7 +13,6 @@ This is a solution to the HTML 2 Make It Real - Stats preview card component- to
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -29,14 +28,13 @@ Tus usuarios deberían poder:
 Ver el diseño óptimo para el componente según el tamaño de pantalla de su dispositivo
 
 ### Screenshot
+Vista mobile 375px
+![image](https://user-images.githubusercontent.com/102271918/215847138-4446b28c-9542-45f9-ad51-02a9ef975fcd.png)
 
-![](./screenshot.jpg)
+Vista desktop 1440px
+![image](https://user-images.githubusercontent.com/102271918/215847393-a0e88811-f229-490b-a61b-9525ab77e521.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
 
 ## My process
@@ -53,23 +51,30 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - El uso de las propiedades de posicion absoluta y relativa para superponer el color de la imagen.
 - El manejo de los "div" para organizacion de la informacion tanto de texto como imagen.
 
-To see how you can add code snippets, see below:
+HTML para filtro de imagen
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+ <picture class="img_container">
+       <div class="img_filter"></div>
+       <img src="./assets/image-header-desktop.jpg" alt="">
+ </picture>
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+CSS para filtro de imagen
+
+.img_container img{
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.img_filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(138 15 155 / 40%);
+    border-radius: 10px 10px 0 0;
+}
+
+
 
 ### Continued development
 
@@ -77,15 +82,12 @@ El desarrollo de aplicaciones para trabajo no solo en pc, sino que sean funciona
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Example resource 1](https://www.example.com)](https://developer.mozilla.org/es/docs/Web/CSS/:nth-child) - Recurso usado para referirse a una etiqueta comun en un grupo de hermanos
+- [Example resource 2](https://www.example.com)](https://htmlcolorcodes.com/es/) - Usado para encontrar el color del filtro de imagen
+- [Example resource 3](https://developer.mozilla.org/es/docs/Web/HTML/Element/b) - Se utilizó la documentación para cambiar la propiedad de una palabra dentro del texto
 
 ## Author
 
 - [Sebastian Alvarez and Oscar Nuñez]
 
 
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
