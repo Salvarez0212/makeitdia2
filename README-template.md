@@ -28,10 +28,10 @@ Tus usuarios deberían poder:
 Ver el diseño óptimo para el componente según el tamaño de pantalla de su dispositivo
 
 ### Screenshot
-Vista mobile 375px
+                                            Vista mobile 375px
 ![image](https://user-images.githubusercontent.com/102271918/215847138-4446b28c-9542-45f9-ad51-02a9ef975fcd.png)
 
-Vista desktop 1440px
+                                            Vista desktop 1440px
 ![image](https://user-images.githubusercontent.com/102271918/215847393-a0e88811-f229-490b-a61b-9525ab77e521.png)
 
 
